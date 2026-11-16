@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evialert"
+version = "1.1.0"
+description = "Evidence-aware alerting with abstention and person-level certification of false-alert budgets"
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy"]
+license = {text = "MIT"}
+
+[tool.setuptools]
+packages = ["evialert"]

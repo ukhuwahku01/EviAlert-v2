@@ -1,0 +1,515 @@
+{
+ "infant": {
+  "ville_fa_mean": 5.036066666666667,
+  "ville_fa_min": 1.2866666666666666,
+  "ville_fa_max": 12.66,
+  "ville_within": 0.0,
+  "ville_recall": 0.6884393640200563,
+  "R@0.5": {
+   "edet": 0.20536673866182803,
+   "evialert": 0.37627214565291867,
+   "diff": 0.1709054069910905,
+   "evialert_higher": 100,
+   "lower": 0,
+   "p": 3.896120241954008e-18
+  },
+  "R@1.0": {
+   "edet": 0.3594125719467057,
+   "evialert": 0.463157010135874,
+   "diff": 0.10374443818916827,
+   "evialert_higher": 99,
+   "lower": 1,
+   "p": 4.139140769112086e-18
+  },
+  "R@2.0": {
+   "edet": 0.5191461970634441,
+   "evialert": 0.5562319715376015,
+   "diff": 0.03708577447415745,
+   "evialert_higher": 90,
+   "lower": 6,
+   "p": 1.1272025543244118e-15
+  },
+  "within_naive": 0.63,
+  "within_poisson": 0.76,
+  "within_gboot": 0.96,
+  "gboot": {
+   "feasible": 1.0,
+   "fa": 0.5446666666666666,
+   "recall": 0.2186515589379815,
+   "stale_per150h": 0.8
+  },
+  "within_gboot_evialert": 0.93,
+  "gboot_evialert": {
+   "fa": 0.4665333333333334,
+   "recall": 0.36708936204384907,
+   "stale_per150h": 0.01
+  },
+  "per_backbone_R@1": {
+   "resnet50": 0.300752766416619,
+   "vit_b16": 0.38925449727193484,
+   "convnext_t": 0.4260795272185242,
+   "swin_t": 0.4406071580649848,
+   "effnet_b0": 0.2403689107614654
+  }
+ },
+ "wesad": {
+  "LR": {
+   "ville": {
+    "within": 0.06666666666666667,
+    "certified": 1.0,
+    "recall": 1.0,
+    "rate": 5.2144846796657385,
+    "stale_per100h": 35.65459610027855
+   },
+   "ltt": {
+    "within": 0.9333333333333333,
+    "certified": 1.0,
+    "recall": 0.8666666666666667,
+    "rate": 0.13370473537604458,
+    "stale_per100h": 4.456824512534819
+   },
+   "crc": {
+    "within": 0.8666666666666667,
+    "certified": 1.0,
+    "recall": 0.8666666666666667,
+    "rate": 0.31197771587743733,
+    "stale_per100h": 4.456824512534819
+   },
+   "naive": {
+    "within": 0.6,
+    "certified": 1.0,
+    "recall": 1.0,
+    "rate": 1.2033426183844012,
+    "stale_per100h": 8.913649025069638
+   },
+   "insuff": 0.0729995011189701,
+   "evialert_ltt": {
+    "within": 0.9333333333333333,
+    "certified": 1.0,
+    "recall": 0.26666666666666666,
+    "rate": 0.13370473537604458,
+    "stale_per100h": 0.0
+   },
+   "evialert_crc": {
+    "within": 0.8,
+    "certified": 1.0,
+    "recall": 0.6666666666666666,
+    "rate": 0.4011142061281337,
+    "stale_per100h": 0.0
+   },
+   "evialert_naive": {
+    "within": 0.6,
+    "certified": 1.0,
+    "recall": 1.0,
+    "rate": 1.0696378830083566,
+    "stale_per100h": 22.284122562674096
+   },
+   "person_R@0.5": {
+    "edet": 1.0,
+    "evialert": 0.9333333333333333,
+    "edet_higher": 1,
+    "lower": 0,
+    "p_unadjusted": 0.31731050786291415,
+    "n": 15
+   },
+   "person_R@1.0": {
+    "edet": 1.0,
+    "evialert": 1.0,
+    "edet_higher": 0,
+    "lower": 0,
+    "p_unadjusted": NaN,
+    "n": 15
+   },
+   "person_R@2.0": {
+    "edet": 1.0,
+    "evialert": 1.0,
+    "edet_higher": 0,
+    "lower": 0,
+    "p_unadjusted": NaN,
+    "n": 15
+   }
+  },
+  "RF": {
+   "ville": {
+    "within": 0.13333333333333333,
+    "certified": 1.0,
+    "recall": 1.0,
+    "rate": 7.1754874651810585,
+    "stale_per100h": 44.56824512534819
+   },
+   "ltt": {
+    "within": 0.9333333333333333,
+    "certified": 1.0,
+    "recall": 0.6666666666666666,
+    "rate": 0.31197771587743733,
+    "stale_per100h": 0.0
+   },
+   "crc": {
+    "within": 0.8,
+    "certified": 1.0,
+    "recall": 0.8,
+    "rate": 0.4011142061281337,
+    "stale_per100h": 0.0
+   },
+   "naive": {
+    "within": 0.6666666666666666,
+    "certified": 1.0,
+    "recall": 0.9333333333333333,
+    "rate": 1.0696378830083566,
+    "stale_per100h": 4.456824512534819
+   },
+   "insuff": 0.0729995011189701,
+   "evialert_ltt": {
+    "within": 0.9333333333333333,
+    "certified": 1.0,
+    "recall": 0.26666666666666666,
+    "rate": 0.17827298050139276,
+    "stale_per100h": 0.0
+   },
+   "evialert_crc": {
+    "within": 0.8666666666666667,
+    "certified": 1.0,
+    "recall": 0.6666666666666666,
+    "rate": 0.4456824512534819,
+    "stale_per100h": 0.0
+   },
+   "evialert_naive": {
+    "within": 0.7333333333333333,
+    "certified": 1.0,
+    "recall": 0.8666666666666667,
+    "rate": 1.0696378830083566,
+    "stale_per100h": 0.0
+   },
+   "person_R@0.5": {
+    "edet": 1.0,
+    "evialert": 0.8666666666666667,
+    "edet_higher": 2,
+    "lower": 0,
+    "p_unadjusted": 0.15729920705028502,
+    "n": 15
+   },
+   "person_R@1.0": {
+    "edet": 1.0,
+    "evialert": 0.9333333333333333,
+    "edet_higher": 1,
+    "lower": 0,
+    "p_unadjusted": 0.31731050786291415,
+    "n": 15
+   },
+   "person_R@2.0": {
+    "edet": 1.0,
+    "evialert": 1.0,
+    "edet_higher": 0,
+    "lower": 0,
+    "p_unadjusted": NaN,
+    "n": 15
+   }
+  },
+  "HGB": {
+   "ville": {
+    "within": 0.13333333333333333,
+    "certified": 1.0,
+    "recall": 0.9333333333333333,
+    "rate": 5.749303621169917,
+    "stale_per100h": 53.48189415041783
+   },
+   "ltt": {
+    "within": 1.0,
+    "certified": 1.0,
+    "recall": 0.5333333333333333,
+    "rate": 0.22284122562674094,
+    "stale_per100h": 0.0
+   },
+   "crc": {
+    "within": 0.8,
+    "certified": 1.0,
+    "recall": 0.8666666666666667,
+    "rate": 0.4011142061281337,
+    "stale_per100h": 0.0
+   },
+   "naive": {
+    "within": 0.6666666666666666,
+    "certified": 1.0,
+    "recall": 0.9333333333333333,
+    "rate": 0.9805013927576601,
+    "stale_per100h": 0.0
+   },
+   "insuff": 0.0729995011189701,
+   "evialert_ltt": {
+    "within": 1.0,
+    "certified": 1.0,
+    "recall": 0.5333333333333333,
+    "rate": 0.0,
+    "stale_per100h": 0.0
+   },
+   "evialert_crc": {
+    "within": 0.8666666666666667,
+    "certified": 1.0,
+    "recall": 0.6666666666666666,
+    "rate": 0.31197771587743733,
+    "stale_per100h": 0.0
+   },
+   "evialert_naive": {
+    "within": 0.6666666666666666,
+    "certified": 1.0,
+    "recall": 0.8666666666666667,
+    "rate": 1.1142061281337048,
+    "stale_per100h": 0.0
+   },
+   "person_R@0.5": {
+    "edet": 0.9333333333333333,
+    "evialert": 0.8666666666666667,
+    "edet_higher": 1,
+    "lower": 0,
+    "p_unadjusted": 0.31731050786291415,
+    "n": 15
+   },
+   "person_R@1.0": {
+    "edet": 1.0,
+    "evialert": 0.9333333333333333,
+    "edet_higher": 1,
+    "lower": 0,
+    "p_unadjusted": 0.31731050786291415,
+    "n": 15
+   },
+   "person_R@2.0": {
+    "edet": 1.0,
+    "evialert": 0.9333333333333333,
+    "edet_higher": 1,
+    "lower": 0,
+    "p_unadjusted": 0.31731050786291415,
+    "n": 15
+   }
+  }
+ },
+ "nurse": {
+  "LR": {
+   "ville": {
+    "within": 0.4666666666666667,
+    "certified": 1.0,
+    "recall": 0.5517241379310345,
+    "rate": 3.0911905402524975,
+    "stale_per100h": 18.70145117949829
+   },
+   "ltt": {
+    "within": 0.9333333333333333,
+    "certified": 1.0,
+    "recall": 0.23563218390804597,
+    "rate": 0.2499117691251341,
+    "stale_per100h": 0.0
+   },
+   "crc": {
+    "within": 0.8,
+    "certified": 1.0,
+    "recall": 0.3218390804597701,
+    "rate": 0.4662783343408542,
+    "stale_per100h": 0.2515890293206048
+   },
+   "naive": {
+    "within": 0.6666666666666666,
+    "certified": 1.0,
+    "recall": 0.3735632183908046,
+    "rate": 1.0977667979355723,
+    "stale_per100h": 2.264301263885443
+   },
+   "insuff": 0.027628367500351903,
+   "evialert_ltt": {
+    "within": 0.9333333333333333,
+    "certified": 1.0,
+    "recall": 0.09770114942528736,
+    "rate": 0.2096575244338373,
+    "stale_per100h": 0.0
+   },
+   "evialert_crc": {
+    "within": 0.8,
+    "certified": 1.0,
+    "recall": 0.20114942528735633,
+    "rate": 0.6222635325196292,
+    "stale_per100h": 0.0
+   },
+   "evialert_naive": {
+    "within": 0.6666666666666666,
+    "certified": 1.0,
+    "recall": 0.3045977011494253,
+    "rate": 1.05667392314654,
+    "stale_per100h": 0.08386300977353492
+   },
+   "person_R@0.5": {
+    "edet": 0.3102278927691221,
+    "evialert": 0.21209124680638922,
+    "edet_higher": 8,
+    "lower": 0,
+    "p_unadjusted": 0.011718685599768628,
+    "n": 15
+   },
+   "person_R@1.0": {
+    "edet": 0.4374026387294753,
+    "evialert": 0.2625743385938289,
+    "edet_higher": 10,
+    "lower": 0,
+    "p_unadjusted": 0.005062032126267864,
+    "n": 15
+   },
+   "person_R@2.0": {
+    "edet": 0.573701632089938,
+    "evialert": 0.4493902163692269,
+    "edet_higher": 8,
+    "lower": 2,
+    "p_unadjusted": 0.03653598360552364,
+    "n": 15
+   }
+  },
+  "RF": {
+   "ville": {
+    "within": 0.06666666666666667,
+    "certified": 1.0,
+    "recall": 0.8850574712643678,
+    "rate": 9.51929023939395,
+    "stale_per100h": 47.214874502500166
+   },
+   "ltt": {
+    "within": 0.9333333333333333,
+    "certified": 1.0,
+    "recall": 0.3390804597701149,
+    "rate": 0.37486765368770114,
+    "stale_per100h": 0.0
+   },
+   "crc": {
+    "within": 0.8666666666666667,
+    "certified": 1.0,
+    "recall": 0.4827586206896552,
+    "rate": 0.6449065451584836,
+    "stale_per100h": 0.0
+   },
+   "naive": {
+    "within": 0.5333333333333333,
+    "certified": 1.0,
+    "recall": 0.5229885057471264,
+    "rate": 0.9828744745458293,
+    "stale_per100h": 0.0
+   },
+   "insuff": 0.027628367500351903,
+   "evialert_ltt": {
+    "within": 1.0,
+    "certified": 1.0,
+    "recall": 0.09770114942528736,
+    "rate": 0.244879988538722,
+    "stale_per100h": 0.0
+   },
+   "evialert_crc": {
+    "within": 0.8,
+    "certified": 1.0,
+    "recall": 0.1206896551724138,
+    "rate": 0.506532579032151,
+    "stale_per100h": 0.0
+   },
+   "evialert_naive": {
+    "within": 0.7333333333333333,
+    "certified": 1.0,
+    "recall": 0.29310344827586204,
+    "rate": 0.9937766658163889,
+    "stale_per100h": 0.16772601954706984
+   },
+   "person_R@0.5": {
+    "edet": 0.39819974017875065,
+    "evialert": 0.21636748170481301,
+    "edet_higher": 10,
+    "lower": 1,
+    "p_unadjusted": 0.005822758233189511,
+    "n": 15
+   },
+   "person_R@1.0": {
+    "edet": 0.5706077974443792,
+    "evialert": 0.33425175385445244,
+    "edet_higher": 11,
+    "lower": 0,
+    "p_unadjusted": 0.003283460986069043,
+    "n": 15
+   },
+   "person_R@2.0": {
+    "edet": 0.6467540649699569,
+    "evialert": 0.4117901275247602,
+    "edet_higher": 11,
+    "lower": 1,
+    "p_unadjusted": 0.006039559048656822,
+    "n": 15
+   }
+  },
+  "HGB": {
+   "ville": {
+    "within": 0.0,
+    "certified": 1.0,
+    "recall": 0.896551724137931,
+    "rate": 9.08823436915798,
+    "stale_per100h": 45.03443624838826
+   },
+   "ltt": {
+    "within": 0.9333333333333333,
+    "certified": 1.0,
+    "recall": 0.367816091954023,
+    "rate": 0.3723517633944951,
+    "stale_per100h": 0.0
+   },
+   "crc": {
+    "within": 0.8666666666666667,
+    "certified": 1.0,
+    "recall": 0.45977011494252873,
+    "rate": 0.5585276450917427,
+    "stale_per100h": 0.0
+   },
+   "naive": {
+    "within": 0.5333333333333333,
+    "certified": 1.0,
+    "recall": 0.5804597701149425,
+    "rate": 0.9811972143503587,
+    "stale_per100h": 0.0
+   },
+   "insuff": 0.027628367500351903,
+   "evialert_ltt": {
+    "within": 0.9333333333333333,
+    "certified": 1.0,
+    "recall": 0.06896551724137931,
+    "rate": 0.25745944000475224,
+    "stale_per100h": 0.0
+   },
+   "evialert_crc": {
+    "within": 0.8,
+    "certified": 1.0,
+    "recall": 0.13793103448275862,
+    "rate": 0.5434323033325064,
+    "stale_per100h": 0.08386300977353492
+   },
+   "evialert_naive": {
+    "within": 0.7333333333333333,
+    "certified": 1.0,
+    "recall": 0.28160919540229884,
+    "rate": 0.9946152959141242,
+    "stale_per100h": 0.3354520390941397
+   },
+   "person_R@0.5": {
+    "edet": 0.40805720765990633,
+    "evialert": 0.20185918029995992,
+    "edet_higher": 11,
+    "lower": 0,
+    "p_unadjusted": 0.0033456181158508813,
+    "n": 15
+   },
+   "person_R@1.0": {
+    "edet": 0.5349931444534143,
+    "evialert": 0.3206336026126131,
+    "edet_higher": 13,
+    "lower": 0,
+    "p_unadjusted": 0.0014541215484221539,
+    "n": 15
+   },
+   "person_R@2.0": {
+    "edet": 0.6542306685485095,
+    "evialert": 0.45749689257935133,
+    "edet_higher": 9,
+    "lower": 0,
+    "p_unadjusted": 0.007685794055213263,
+    "n": 15
+   }
+  }
+ }
+}

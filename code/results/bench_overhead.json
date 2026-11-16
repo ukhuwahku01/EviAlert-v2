@@ -1,0 +1,10 @@
+{
+ "cpu": "x86_64",
+ "python": "3.13.17",
+ "cpu_model": "Intel(R) Xeon(R) Processor @ 2.30GHz",
+ "filter_us_per_step": 1.0095084299999257,
+ "filter_peak_bytes": 448,
+ "cusum_us_per_step": 0.8101774249999494,
+ "cusum_peak_bytes": 520,
+ "certification_ms": 0.13364411499992457
+}
